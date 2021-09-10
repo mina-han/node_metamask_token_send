@@ -7,25 +7,11 @@ const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io
 //console.log("contractAbi:", contractAbi);
 
 
-const contractAddress = '0xF3E1b5068C72149591653Ad99Ab8649FC67E6E4d'
+const contractAddress = '0xfc45Bea6bcDD28dB3Db45d9A4ac7eD898d9193f8'
 
 const contractOwner = {
 	addr: 'yourAccount',
 	key: [
-      {
-         "constant": true,
-         "inputs": [],
-         "name": "name",
-         "outputs": [
-            {
-               "name": "",
-               "type": "string"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
       {
          "constant": false,
          "inputs": [
@@ -64,20 +50,6 @@ const contractOwner = {
          "type": "function"
       },
       {
-         "constant": true,
-         "inputs": [],
-         "name": "fundsWallet",
-         "outputs": [
-            {
-               "name": "",
-               "type": "address"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
          "constant": false,
          "inputs": [
             {
@@ -106,48 +78,6 @@ const contractOwner = {
       },
       {
          "constant": true,
-         "inputs": [],
-         "name": "decimals",
-         "outputs": [
-            {
-               "name": "",
-               "type": "uint8"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
-         "constant": true,
-         "inputs": [],
-         "name": "version",
-         "outputs": [
-            {
-               "name": "",
-               "type": "string"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
-         "constant": true,
-         "inputs": [],
-         "name": "unitsOneEthCanBuy",
-         "outputs": [
-            {
-               "name": "",
-               "type": "uint256"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
-         "constant": true,
          "inputs": [
             {
                "name": "_owner",
@@ -159,34 +89,6 @@ const contractOwner = {
             {
                "name": "balance",
                "type": "uint256"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
-         "constant": true,
-         "inputs": [],
-         "name": "totalEthInWei",
-         "outputs": [
-            {
-               "name": "",
-               "type": "uint256"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "view",
-         "type": "function"
-      },
-      {
-         "constant": true,
-         "inputs": [],
-         "name": "symbol",
-         "outputs": [
-            {
-               "name": "",
-               "type": "string"
             }
          ],
          "payable": false,
@@ -206,33 +108,6 @@ const contractOwner = {
             }
          ],
          "name": "transfer",
-         "outputs": [
-            {
-               "name": "success",
-               "type": "bool"
-            }
-         ],
-         "payable": false,
-         "stateMutability": "nonpayable",
-         "type": "function"
-      },
-      {
-         "constant": false,
-         "inputs": [
-            {
-               "name": "_spender",
-               "type": "address"
-            },
-            {
-               "name": "_value",
-               "type": "uint256"
-            },
-            {
-               "name": "_extraData",
-               "type": "bytes"
-            }
-         ],
-         "name": "approveAndCall",
          "outputs": [
             {
                "name": "success",
@@ -265,17 +140,6 @@ const contractOwner = {
          "payable": false,
          "stateMutability": "view",
          "type": "function"
-      },
-      {
-         "inputs": [],
-         "payable": false,
-         "stateMutability": "nonpayable",
-         "type": "constructor"
-      },
-      {
-         "payable": true,
-         "stateMutability": "payable",
-         "type": "fallback"
       },
       {
          "anonymous": false,

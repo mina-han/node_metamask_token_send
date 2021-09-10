@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    const ContractAddress = '0x912ab3031910d1b23bfBF2f58137175A6E7635A5';
+    const ContractAddress = '0xfc45Bea6bcDD28dB3Db45d9A4ac7eD898d9193f8';
     // const ContractABI = $.getScript("/js/contractabi.json");
 
     $('#linkHome').click(function () { showView("viewHome") });
