@@ -7,7 +7,7 @@ const web3 = new Web3(new Web3.providers.HttpProvider('https://ropsten.infura.io
 //console.log("contractAbi:", contractAbi);
 
 
-const contractAddress = '0xfc45Bea6bcDD28dB3Db45d9A4ac7eD898d9193f8'
+const contractAddress = '0xF3E1b5068C72149591653Ad99Ab8649FC67E6E4d'
 
 const contractOwner = {
 	addr: 'yourAccount',
